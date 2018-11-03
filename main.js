@@ -1,5 +1,9 @@
 alert("Ain't that some shit")
+$(updateView)
 
+function updateView(){
+    alert("Using jQuery!")
+}
 /** @license
  * DHTML Snowstorm! JavaScript-based snow for web pages
  * Making it snow on the internets since 2003. You're welcome.
