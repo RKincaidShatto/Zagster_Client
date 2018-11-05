@@ -1,9 +1,28 @@
-alert("Ain't that some shit")
+const BASE_URL = "https://zagster-service.herokuapp.com"
 $(updateView)
 
-function updateView(){
-    alert("Using jQuery!")
+function updateView() {
+    $.getJSON(BASE_URL + "/rides/count", updateRideCount)
 }
+
+function updateRideCount(data) {
+    numberOfRides = data.count
+    $("h2#rideCount").html(numberOfRides)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /** @license
  * DHTML Snowstorm! JavaScript-based snow for web pages
  * Making it snow on the internets since 2003. You're welcome.
