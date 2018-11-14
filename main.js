@@ -3,25 +3,16 @@ $(updateView)
 
 function updateView() {
     $.getJSON(BASE_URL + "/rides/count", updateRideCount)
+    $.getJSON(BASE_URL + "/rides/count/per_month", printData)
 }
 
 function updateRideCount(data) {
     numberOfRides = data.count
     $("h2#rideCount").html(numberOfRides)
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+function printData(data){
+  console.log(data)
+}
 
 /** @license
  * DHTML Snowstorm! JavaScript-based snow for web pages
