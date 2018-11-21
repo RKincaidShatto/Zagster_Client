@@ -43,8 +43,8 @@ img {
   stroke: steelblue;
 }
 #chartContainer{
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
     text-align: center;
     border: 2px white;
 }
