@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    <script defer src="main.js"></script>
     <script src="snow.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
 </head>
@@ -59,8 +59,8 @@
     <h2 id="rideCount">TODO</h2>
     <P>Total ride growth over time with projected growth</P>
     
-    
 </body>
 </html>
+<script>setTimeout(function(){$('#chartContainer').hide().show(0);}, 30000);</script>
 
 
