@@ -17,7 +17,6 @@ function updateRideCount(data) {
 }
 function getData(data){
   rideData = data;
-  console.log(rideData);
   
 for (var i = 0; i <=3; ++i){
   chartData.push(rideData[2016] [i] [i+9]);
