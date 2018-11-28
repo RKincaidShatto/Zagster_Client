@@ -3,9 +3,6 @@ var chartData = []
 var rideData = []
 $(updateView)
 
-
-
-
 function updateView() {
     $.getJSON(BASE_URL + "/rides/count", updateRideCount)
     $.getJSON(BASE_URL + "/rides/count/per_month", getData)
